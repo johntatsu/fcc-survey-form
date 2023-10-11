@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: sans-serif;
+
+    background-image: linear-gradient( 20deg, rgba(8, 8, 9, 0.8), rgba(125, 125, 213, 0.8) ), url(https://wallpapercave.com/wp/wp12584578.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+  
+/* .background-image {
+    background-image: linear-gradient( 20deg, rgba(8, 8, 9, 0.8), rgba(125, 125, 213, 0.8) ), url(https://wallpapercave.com/wp/wp12584578.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+.container {
+    text-align: center;
+}
+
+#survey-form {
+    margin: 30px auto;
+    padding: 40px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(50, 46, 128, 0.8);
+
+    text-align: left;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#survey-form * {
+    margin: 10px 10px 20px 10px;
+}
+
+#survey-form .multiple-btn {
+    margin: 0px 10px;
+}
+
+#survey-form > label {
+    margin-bottom: 5px;
+}
+
+.optional-text {
+    color: #999999;
+}
+
+.check {
+    font-size: 15px;
+}
+
+.text-input, select, textarea{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    color: gray;
+    background-color: white;
+}
+
+select:disabled {
+    color: gray;
+}
+
+select option {
+    color: black;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+#submit {
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #37af65;
+    color: white;
+    font-size: 20px;
+
+}

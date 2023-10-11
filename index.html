@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snowbreak Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="background-image">
+            <div class="container">
+                <h1 id="title">Snowbreak Beta Test Survey Form</h1>
+                <p id="description">
+                    Please fill out all necessary information required to 
+                    finish the beta test survey. You can skip items with <em>optional.</em>
+                </p>
+                <p>( * ) Indicates that the item is required and cannot be skipped.</p>
+                    
+                <form id="survey-form">
+                    <label id="name-label" class="label" for="name">Name *</label>
+                    <input id="name" class="text-input" type="text" placeholder="Enter your name" required>
+            
+                    <label id="email-label" class="label" for="email">Email *</label>
+                    <input id="email" class="text-input" type="email" placeholder="Enter your email" required>
+            
+                    <label id="number-label" class="label" for="number">Age<em class="optional-text">(optional)</em> </label>
+                    <input id="number" class="text-input" type="number" min="10" max="150" placeholder="Age">
+
+                    <label id="dropdown-label" class="label" for="dropdown">What type of gamer are you? </label>
+                    <select id="dropdown" name="role" title="Please select an item in the list">
+                        <option value="none" class="first" disabled selected hidden>Select type of gamer</option>
+                        <option value="casual">Casual</option>
+                        <option value="hardcore">Hardcore</option>
+                        <option value="competitive">Competitive</option>
+                        <option value="social">Social</option>
+                        <option value="educational">Educational</option>
+                    </select>
+
+                    <label id="radio-label" class="label" for="radio-grp">
+                        Would you recommend Snowbreak Containment Zone to a friend?
+                    </label>
+
+                    <label class="multiple-btn">
+                        <input type="radio" name="radio-recommend" value="definitely">
+                        Definitely
+                    </label>
+
+                    <label class="multiple-btn">
+                        <input type="radio" name="radio-recommend" value="maybe">
+                        Maybe
+                    </label>
+
+                    <label class="multiple-btn">
+                        <input type="radio" name="radio-recommend" value="not-sure">
+                        Not sure
+                    </label>
+
+                    <label id="dropdown-fav-label" class="label" for="dropdown-fav">What is your favorite aspect of the game </label>
+                    <select id="dropdown-fav" name="favorite" title="Please select an item in the list">
+                        <option value="none" class="first" disabled selected hidden>Select an option</option>
+                        <option value="illustrations">Illustrations</option>
+                        <option value="characters">Characters</option>
+                        <option value="story">Story</option>
+                        <option value="gameplay">Gameplay</option>
+                    </select>
+
+                    <label id="improve-label" class="label" for="improve-checkbox">What would you like to see improved? <span class="check">(Check all that apply)</span></label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="shooting-mechanics">
+                        Shooting Mechanics
+                    </label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="graphics/models">
+                        Graphics/Models
+                    </label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="laggy/frame-drop">
+                        Laggy/Frame drop
+                    </label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="character-design/costumes">
+                        Character Design/Costumes
+                    </label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="multiplayer-mode">
+                        Multiplayer Mode
+                    </label>
+                    <label class="multiple-btn">
+                        <input type="checkbox" name="improve" value="game-controls">
+                        Game Controls
+                    </label>
+
+                    <label id="comments-label" class="label" for="comments-textarea">Any comments or suggestions?</label>
+                    <textarea id="comments-textarea" name="comments" rows="8" cols="5" 
+                    placeholder="Enter your comment here...">
+                    </textarea>  
+
+                    <button id="submit">Submit</button>
+                </form>
+            </div>  
+        </div>
+    </body>
+</html>
